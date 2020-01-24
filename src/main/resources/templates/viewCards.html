@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<title>Cards</title>
+	</head>
+	
+	<body>
+		<h1>Cards de instituicoes</h1>
+			<table>
+				<tr>
+					<th>Card Primario</th>
+					<th>Data</th>
+					<th>NumeroSeqArquivo</th>
+					<th>Instituicao</th>
+				</tr>
+				<tr method= "get" th:each="card : *{Arquivo}">
+					<td  th:text = "${card.getCardPrimitivo()}   "></td>
+					<td  th:text = "${card.getData()}   "></td>
+					<td  th:text = "${card.getNumeroSeqArquivo()}   "></td>
+					<td  th:text = "${card.getConstanteInstituicao()}   "></td>
+				</tr>
+			</table>
+	</body>
+
+</html>
