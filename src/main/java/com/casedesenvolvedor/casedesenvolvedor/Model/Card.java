@@ -1,39 +1,60 @@
 package com.casedesenvolvedor.casedesenvolvedor.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import org.springframework.lang.Nullable;
 
 @Entity
 @Table(name = "Card")
 public class Card {
-	
+		
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long codigo;
 	
+	@Column(unique=true)
+	private String cardPrimitivo;
+	
+	public String getCardPrimitivo() {
+		return cardPrimitivo;
+	}
+	public void setCardPrimitivo(String cardPrimitivo) {
+		this.cardPrimitivo = cardPrimitivo;
+	}
+	public Card() {
+		
+	}
+	
 	private String numeroEstabelecimento;
 	private String data;
+	
+	@Nullable
 	private String periodoInicial;
+	@Nullable
 	private String periodoFinal;
+	
 	private String numeroSeqArquivo;
 	private String constanteInstituicao;
 	
-	public Card (String numeroEstabelecimento,String data,String periodoInicial,String periodoFinal,String numeroSeqArquivo,String constanteInstituicao) { //UflaCard construtor
+	public Card (String numeroEstabelecimento,String data,String periodoInicial,String periodoFinal,String numeroSeqArquivo,String constanteInstituicao,String cardPrimitivo) { //UflaCard construtor
 		this.numeroEstabelecimento = numeroEstabelecimento;
 		this.data = data;
 		this.periodoInicial = periodoInicial;
 		this.periodoFinal = periodoFinal;
 		this.numeroSeqArquivo = numeroSeqArquivo;
 		this.constanteInstituicao = constanteInstituicao;
+		this.cardPrimitivo = cardPrimitivo;
 	}
-	public Card (String data,String numeroEstabelecimento,String constanteInstituicao,String numeroSeqArquivo) { //FagammonCard construtor
+	public Card (String data,String numeroEstabelecimento,String constanteInstituicao,String numeroSeqArquivo,String cardPrimitivo) { //FagammonCard construtor
 		this.numeroEstabelecimento = numeroEstabelecimento;
 		this.data = data;
 		this.numeroSeqArquivo = numeroSeqArquivo;
 		this.constanteInstituicao = constanteInstituicao;
+		this.cardPrimitivo = cardPrimitivo;
 	}
 	
 	public String getNumeroEstabelecimento() {
@@ -72,19 +93,8 @@ public class Card {
 	public void setConstanteInstituicao(String constanteInstituicao) {
 		this.constanteInstituicao = constanteInstituicao;
 	}
-	
-	public String retornarCard() {
-		String retorno;
-		if (this.getConstanteInstituicao() == "UflaCard") { // UflaCard
-			retorno = "0" + this.getNumeroEstabelecimento() + this.getData() +
-					this.getPeriodoInicial() + this.getPeriodoFinal() +
-					this.getNumeroSeqArquivo() + this.getConstanteInstituicao();
-			return retorno;
-		}else { // FagammonCard
-			retorno = "1" + this.getData()+ this.getNumeroEstabelecimento() +
-					 this.getConstanteInstituicao() +this.getNumeroSeqArquivo() ;
-			return retorno;
-		}
+	public long getCodigo() {
+		return codigo;
 	}
 	
 }
