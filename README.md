@@ -17,7 +17,7 @@ e alterar o username,senha e trocar o nome do banco de dados para o desejado.
   MYSQL 8.0 Commando line é necessario criar o banco de dados. Faça a autenticação e utilize os comandos:
     (create database XXX;) XXX sendo o nome do seu banco de dados ja alterado
      use XXX;
-   e para inicial o front-end é necessário utilizar o comando (npm start).
+   e para inicial o front-end é necessário utilizar o comando (npm start) e se caso necessário npm install.
  Pronto !!! Agora as URLs para acesso do usuários são :
     http://localhost:3000/verGraph
     http://localhost:3000/viewCards
