@@ -1,4 +1,4 @@
-package com.casedesenvolvedor.casedesenvolvedor;
+package com.casedesenvolvedor.casedesenvolvedor.support;
 
 import java.io.File;
 import java.util.ArrayList;

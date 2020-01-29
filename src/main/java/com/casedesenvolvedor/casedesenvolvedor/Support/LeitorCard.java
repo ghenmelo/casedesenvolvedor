@@ -1,4 +1,4 @@
-package com.casedesenvolvedor.casedesenvolvedor;
+package com.casedesenvolvedor.casedesenvolvedor.support;
 
 
 import java.io.BufferedReader;
@@ -57,7 +57,7 @@ public class LeitorCard {
 		String periodoFinal = card.substring(27, 34);
 		String numeroSequencial = card.substring(35,41);
 		String constanteInstituicao = card.substring(42, 49);
-		Card newCard = new Card(data,numeroEstabelecimento,constanteInstituicao,numeroSequencial,card);
+		Card newCard = new Card(numeroEstabelecimento,data,periodoInicial,periodoFinal,numeroSequencial,constanteInstituicao,card);
 		return newCard;
 	}
 }
