@@ -1,11 +1,11 @@
-package com.casedesenvolvedor.casedesenvolvedor.support;
+package com.casedesenvolvedor.casedesenvolvedor.Support;
 
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-import com.casedesenvolvedor.casedesenvolvedor.model.Arquivo;
-import com.casedesenvolvedor.casedesenvolvedor.model.Card;
+import com.casedesenvolvedor.casedesenvolvedor.Model.Arquivo;
+import com.casedesenvolvedor.casedesenvolvedor.Model.Card;
 
 public class LeitorCard {
 	

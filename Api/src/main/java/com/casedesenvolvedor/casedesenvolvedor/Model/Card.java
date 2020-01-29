@@ -1,4 +1,4 @@
-package com.casedesenvolvedor.casedesenvolvedor.model;
+package com.casedesenvolvedor.casedesenvolvedor.Model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

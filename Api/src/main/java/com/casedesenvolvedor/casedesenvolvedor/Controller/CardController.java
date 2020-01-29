@@ -1,4 +1,4 @@
-package com.casedesenvolvedor.casedesenvolvedor.controller;
+package com.casedesenvolvedor.casedesenvolvedor.Controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,13 +22,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.casedesenvolvedor.casedesenvolvedor.model.Arquivo;
-import com.casedesenvolvedor.casedesenvolvedor.model.Card;
-import com.casedesenvolvedor.casedesenvolvedor.repository.CardRepository;
+import com.casedesenvolvedor.casedesenvolvedor.Model.Arquivo;
+import com.casedesenvolvedor.casedesenvolvedor.Model.Card;
+import com.casedesenvolvedor.casedesenvolvedor.Repository.CardRepository;
 import com.mysql.cj.log.Log;
 
-import com.casedesenvolvedor.casedesenvolvedor.support.BackupStorage;
-import com.casedesenvolvedor.casedesenvolvedor.support.LeitorCard;
+import com.casedesenvolvedor.casedesenvolvedor.Support.BackupStorage;
+import com.casedesenvolvedor.casedesenvolvedor.Support.LeitorCard;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

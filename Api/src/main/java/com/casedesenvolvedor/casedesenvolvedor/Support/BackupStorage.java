@@ -1,10 +1,10 @@
-package com.casedesenvolvedor.casedesenvolvedor.support;
+package com.casedesenvolvedor.casedesenvolvedor.Support;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.casedesenvolvedor.casedesenvolvedor.model.Arquivo;
+import com.casedesenvolvedor.casedesenvolvedor.Model.Arquivo;
 
 public class BackupStorage {
 	

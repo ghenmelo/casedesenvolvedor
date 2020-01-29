@@ -1,4 +1,4 @@
-package com.casedesenvolvedor.casedesenvolvedor.configuration;
+package com.casedesenvolvedor.casedesenvolvedor.Configuration;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import org.springframework.context.annotation.Bean;

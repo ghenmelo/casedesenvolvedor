@@ -6,19 +6,17 @@ import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.Rule;
 import org.junit.jupiter.api.Test;
-import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
+import org.junit.rules.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.casedesenvolvedor.casedesenvolvedor.model.Card;
-import com.casedesenvolvedor.casedesenvolvedor.repository.CardRepository;
-import com.casedesenvolvedor.casedesenvolvedor.support.LeitorCard;
+import com.casedesenvolvedor.casedesenvolvedor.Model.Card;
+import com.casedesenvolvedor.casedesenvolvedor.Repository.CardRepository;
+import com.casedesenvolvedor.casedesenvolvedor.Support.LeitorCard;
 
 @SpringBootTest
-@RunWith(SpringRunner.class)
+@org.junit.runner.RunWith(SpringRunner.class)
 class CasedesenvolvedorApplicationTests {
 	@Autowired
 	private CardRepository crudCard;

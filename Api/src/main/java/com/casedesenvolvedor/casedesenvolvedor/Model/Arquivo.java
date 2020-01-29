@@ -1,4 +1,4 @@
-package com.casedesenvolvedor.casedesenvolvedor.model;
+package com.casedesenvolvedor.casedesenvolvedor.Model;
 
 
 
