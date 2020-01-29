@@ -22,6 +22,7 @@ e alterar o username,senha e trocar o nome do banco de dados para o desejado.
     http://localhost:3000/verGraph
     http://localhost:3000/viewCards
     http://localhost:3000/arquivoRecepcionados
+ É também possivel acessar a pagina do Swagger com o link http://localhost:8080/swagger-ui.html .
 
 
 
