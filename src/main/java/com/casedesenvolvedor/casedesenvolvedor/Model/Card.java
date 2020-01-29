@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+
 import org.springframework.lang.Nullable;
 
 @Entity
@@ -29,15 +31,17 @@ public class Card {
 		
 	}
 	
+	@NotEmpty
 	private String numeroEstabelecimento;
+	@NotEmpty
 	private String data;
-	
 	@Nullable
 	private String periodoInicial;
 	@Nullable
 	private String periodoFinal;
-	
+	@NotEmpty
 	private String numeroSeqArquivo;
+	@NotEmpty
 	private String constanteInstituicao;
 	
 	public Card (String numeroEstabelecimento,String data,String periodoInicial,String periodoFinal,String numeroSeqArquivo,String constanteInstituicao,String cardPrimitivo) { //UflaCard construtor
@@ -98,3 +102,4 @@ public class Card {
 	}
 	
 }
+
